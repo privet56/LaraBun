@@ -8,16 +8,17 @@
 ## Start
     php -S localhost:8000 -t public/            //in the LaraBun_Backend folder
     ng serve                                    //in the LaraBun_Fronten folder
+    http://localhost:4200
 
 ## Editor with Backend and Frontend projects
 
 ![editor](https://raw.githubusercontent.com/privet56/LaraBun/master/vsc.php.json.api.png)
 
 ## TODO:
+	Custom Bootstrap Styles & Fonts
     build frontend into backend/public
-    front pic & title (animated)
 
-## helpful commands:
+## Commands:
 
     composer --version
     composer create-project --prefer-dist laravel/laravel LaraBun
@@ -45,6 +46,12 @@
     Buns::where('id', '=', 3)->get();
     Buns::with('resource')->find(3);
 
+## Project Setup
+    php artisan jwt:secret										//attention: do not check in secrets & keys in to your git repo
+    php artisan key:generate                                    //they put keys into .env
+    php -S localhost:8000 -t public/                            //use builtin php webserver, easier than xamp
+    php artisan serve
+
 ### Swagger
     composer require "darkaonline/l5-swagger"
     php artisan vendor:publish --provider "L5Swagger\L5SwaggerServiceProvider"
@@ -58,12 +65,6 @@
     composer require doctrine/dbal
     php artisan migrate
     php artisan db:seed
-
-## Setup
-    php artisan jwt:secret
-    php artisan key:generate                                    //they put keys into .env
-    php -S localhost:8000 -t public/                            //use builtin php webserver, easier than xamp
-    php artisan serve
 
 ### JWT
     composer.json -> "tymon/jwt-auth": "1.0.*"
