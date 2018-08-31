@@ -93,3 +93,11 @@
 ### Debug mode:
     app.php
         'debug' => env('APP_DEBUG', true),                      //you will get nice error output in the browser
+
+###
+
+## PHP Editor in VSCode
+![e1](https://raw.githubusercontent.com/privet56/LaraBun/master/vsc.php.editor.png)
+
+## GitLens
+![e2](https://raw.githubusercontent.com/privet56/LaraBun/master/vsc.gitlens.png)

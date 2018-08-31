@@ -1,0 +1,78 @@
+<main role="main">
+  <div class="py-5">
+    <div class="container">
+      <div *ngIf="isLoading" class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+      <ngb-tabset type="pills" *ngIf="!isLoading">
+          <ngb-tab title="Bun Detail">
+            <ng-template ngbTabContent>
+              <br>
+              <div class="row">
+                <div class="col-md-4">
+                  <img class="card-img-top" src="{{ bun?.picture }}" alt="Card image cap">
+                </div>
+                <div class="col-md-8">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ bun?.name }} | Ratings: {{ bun?.average_rating }}
+                        <span *ngIf="userVote">| Your Vote: {{ userVote }}</span>
+                      </h5>
+                      <p class="card-text">{{ bun?.desc }}</p>
+					  <p class="card-text">{{ bun?.picture }}</p><!-- //TODO:! -->
+                    </div>
+                    <div *ngIf="bun?.items" class="card-header">
+                      <strong>Featured Resources</strong>:
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li *ngFor="let item of bun?.items" class="list-group-item">
+						<!-- //TODO: if pic -> show! -->
+                        <strong>Resource</strong>: {{ item.res }} |
+                        <strong>Name</strong>: {{ item.name }} |
+                      </li>
+                    </ul>
+                    <div class="card-body">
+                      <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">Vote: </li>
+                        <li class="list-inline-item">
+                          <a (click)="onVote('1')" class="btn btn-outline-secondary">1</a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a (click)="onVote('2')" class="btn btn-outline-primary">2</a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a (click)="onVote('3')" class="btn btn-outline-success">3</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </ngb-tab>
+          <ngb-tab>
+            <ng-template ngbTabTitle *ngIf="checkBunOwner()">Edit bun</ng-template>
+            <ng-template ngbTabContent>
+              <br>
+              <form (ngSubmit)="onSubmit(bunAddForm)" #bunAddForm="ngForm" name=bunAddForm class="bg-light px-4 py-4">
+                <div class="form-group">
+                  <label for="make">Name</label>
+                  <input type="text" [(ngModel)]="bun.name"  name="make" class="form-control" id="make" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                  <label for="model">Desc</label>
+                  <input type="text" [(ngModel)]="bun.desc" name="model" class="form-control" id="model" placeholder="Enter desc">
+                </div>
+                <div class="form-group">
+                  <label for="picture">Picture</label>
+                  <input type="text" [(ngModel)]="bun.picture" name="picture" class="form-control" id="picture" placeholder="Enter picture url">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </ng-template>
+          </ngb-tab>
+        </ngb-tabset>
+    </div>
+  </div>
+</main>

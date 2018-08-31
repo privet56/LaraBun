@@ -14,7 +14,4 @@ npm install -g npm@latest -f
 npm install -g outdated
 npm install -g npm-check-updates
 
-rem optional:
-rem npm install -g angular-cli
-rem npm install -g node-sass
-rem npm rebuild node-sass						//execute this step also for your project!!!
+npm install -g @angular/cli@latest				rem npm install -g angular-cli
