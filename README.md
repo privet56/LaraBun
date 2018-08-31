@@ -5,6 +5,10 @@
 - PHP IntelliSense
 - SQLite
 
+## Start
+    php -S localhost:8000 -t public/            //in the LaraBun_Backend folder
+    ng serve                                    //in the LaraBun_Fronten folder
+
 ## Editor with Backend and Frontend projects
 
 ![editor](https://raw.githubusercontent.com/privet56/LaraBun/master/vsc.php.json.api.png)
