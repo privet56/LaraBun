@@ -10,13 +10,20 @@
     ng serve                                    //in the LaraBun_Fronten folder
     http://localhost:4200
 
-## Editor with Backend and Frontend projects
+## Frontend in front of the Code editor:
 
-![editor](https://raw.githubusercontent.com/privet56/LaraBun/master/vsc.php.json.api.png)
+![fe](https://raw.githubusercontent.com/privet56/LaraBun/master/frontend.gif)
 
 ## TODO:
 	Custom Bootstrap Styles & Fonts
     build frontend into backend/public
+	SEO-friendliness
+	fill in real data
+	Swagger UI pic
+
+## Editor with Backend and Frontend projects
+
+![editor](https://raw.githubusercontent.com/privet56/LaraBun/master/vsc.php.json.api.png)
 
 ## Commands:
 
