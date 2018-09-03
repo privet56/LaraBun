@@ -157,17 +157,37 @@ form {
 
   transition: all .6s ease-in-out;
 }
+.cbbutton
+{
+	-moz-box-shadow: 0px 0px 7px 0px #3dc21b;
+	-webkit-box-shadow: 0px 0px 7px 0px #3dc21b;
+	box-shadow: 0px 0px 7px 0px #3dc21b;
+	background-color:#c1ebcc;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	border:1px solid #98e69e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	text-decoration:none;
+  text-shadow:-5px 6px 3px #93de88;
+
+  padding: 6px 3px;
+}
+.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #c4e6b1 !important;
+  border-color: #c4e6b1 !important;
+}
 .btn:hover {
   /*outline: 1px solid rgb(189, 32, 32);*/
   outline-offset: -4px;
   transform: scale(1.09);
 
   background-color:#c4e6b1;
-  
-  /*
-  scale slow
-  TODO:
-  */
 }
 
 body
@@ -181,4 +201,35 @@ h1 {
 h2, h3, h4, h5, h6, a {
   
   font-family: 'Dancing Script', cursive;
+}
+
+.iinput:focus {
+
+  width: 98%;
+}
+
+.iinput {
+  background-image: url('assets/falling_leaves.gif');
+  background-position: 2px -12px;
+  background-repeat: no-repeat;
+
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+
+  border-bottom-color: #b3b3b3;
+  border-bottom-left-radius: 19px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: #b3b3b3;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: #b3b3b3;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: #b3b3b3;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 19px;
+  border-top-style: solid;
+  border-top-width: 1px;
 }

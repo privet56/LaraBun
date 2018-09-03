@@ -121,12 +121,14 @@ class AuthController extends Controller
         ]);
 
         if ($validator->fails()) {
+
             return response()->json($validator->errors(), 422);
         }
 
         $credentials = $request->only(['email', 'password']);
 
         if (!$token = auth()->attempt($credentials)) {
+
             return response()->json(['error' => 'Invalid Credentials'], 400);
         }
 

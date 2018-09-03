@@ -18,6 +18,7 @@ use App\Http\Resources\BunsResource;
 // Register Routes
 Route::post('register', 'API\AuthController@register');
 Route::post('login', 'API\AuthController@login');
+Route::get('login', 'API\AuthController@login');
 Route::post('logout', 'API\AuthController@logout');
 
 Route::apiResources([

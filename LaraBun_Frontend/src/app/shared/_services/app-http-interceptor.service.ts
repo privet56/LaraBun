@@ -13,7 +13,6 @@ export class AppHttpInterceptorService implements HttpInterceptor {
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
 
-    console.log('interceptor running');
     // Get the token from auth service.
     const authToken = this.auth.getToken();
 
@@ -44,7 +43,6 @@ export class AppHttpInterceptorService implements HttpInterceptor {
       );
 
     } else {
-        console.log('interceptor without changes');
         return next.handle(req);
     }
   }
