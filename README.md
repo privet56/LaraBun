@@ -15,7 +15,6 @@
 ![fe](https://raw.githubusercontent.com/privet56/LaraBun/master/frontend.gif)
 
 ## TODO:
-	Custom Bootstrap Styles & Fonts
     build frontend into backend/public
 	SEO-friendliness
 	fill in real data

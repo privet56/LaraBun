@@ -18,6 +18,10 @@ import { HttpErrorHandler } from './shared/_services/http-handle-error.service';
 import { AppHttpInterceptorService } from './shared/_services/app-http-interceptor.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+//use 
+//ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
+//...if you only want pwa for prod build
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +34,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeModule,
     BunsModule,
     AuthModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: true/*environment.production*/ }),
     NgbModule.forRoot()
   ],
   providers: [

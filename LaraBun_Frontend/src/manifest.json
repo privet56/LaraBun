@@ -1,8 +1,8 @@
 {
-  "name": "Client",
-  "short_name": "Client",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "LaraBun",
+  "short_name": "LaraBun",
+  "theme_color": "#c2efb8",
+  "background_color": "#5ca84b",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
