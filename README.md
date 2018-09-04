@@ -53,6 +53,10 @@
     Buns::where('id', '=', 3)->get();
     Buns::with('resource')->find(3);
 
+## Frontend on mobile (iPhone X) in comparison with the Desktop browser:
+
+![fem](https://raw.githubusercontent.com/privet56/LaraBun/master/frontend_mobile.gif)
+
 ## Project Setup
     php artisan jwt:secret										//attention: do not check in secrets & keys in to your git repo
     php artisan key:generate                                    //they put keys into .env
