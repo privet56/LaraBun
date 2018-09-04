@@ -15,8 +15,6 @@
 ![fe](https://raw.githubusercontent.com/privet56/LaraBun/master/frontend.gif)
 
 ## TODO:
-    build frontend into backend/public
-	SEO-friendliness
 	fill in real data
 	Swagger UI pic
 
@@ -102,6 +100,8 @@
     ng test --watch
     npm run e2e
 
+    ng update --all --force                                     //update all dependencies of package.json
+
     npm install http-server -g									//local webserver for testing frontend
     http-server -p 8080											//start this command in the dist folder
 
@@ -116,3 +116,13 @@
 
 ## GitLens
 ![e2](https://raw.githubusercontent.com/privet56/LaraBun/master/vsc.gitlens.png)
+
+
+## Lighthouse Audit:
+    Performance: not ok (too large animated assets / gif)
+    PWA: OK
+    Accessibility: OK
+    Best Practices: OK
+    SEO: OK
+
+![audit](https://raw.githubusercontent.com/privet56/LaraBun/master/lighthouse.audit.png)
