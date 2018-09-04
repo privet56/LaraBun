@@ -12,14 +12,14 @@
 
 ## Frontend in front of the Code editor:
 
-![fe](https://raw.githubusercontent.com/privet56/LaraBun/master/frontend.gif)
+![fe](https://raw.githubusercontent.com/privet56/LaraBun/master/img/frontend.gif)
 
 ## TODO:
 	fill in a lot of real data
 
 ## Editor with Backend and Frontend projects
 
-![editor](https://raw.githubusercontent.com/privet56/LaraBun/master/vsc.php.json.api.png)
+![editor](https://raw.githubusercontent.com/privet56/LaraBun/master/img/vsc.php.json.api.png)
 
 ## Commands:
 
@@ -51,7 +51,7 @@
 
 ## Frontend on mobile (iPhone X) in comparison with the Desktop browser:
 
-![fem](https://raw.githubusercontent.com/privet56/LaraBun/master/frontend_mobile.gif)
+![fem](https://raw.githubusercontent.com/privet56/LaraBun/master/img/frontend_mobile.gif)
 
 ## Project Setup
     php artisan jwt:secret										//attention: do not check in secrets & keys in to your git repo
@@ -110,10 +110,10 @@
 ###
 
 ## PHP Editor in VSCode
-![e1](https://raw.githubusercontent.com/privet56/LaraBun/master/vsc.php.editor.png)
+![e1](https://raw.githubusercontent.com/privet56/LaraBun/master/img/vsc.php.editor.png)
 
 ## GitLens
-![e2](https://raw.githubusercontent.com/privet56/LaraBun/master/vsc.gitlens.png)
+![e2](https://raw.githubusercontent.com/privet56/LaraBun/master/img/vsc.gitlens.png)
 
 
 ## Lighthouse Audit:
@@ -123,8 +123,8 @@
     Best Practices: OK
     SEO: OK
 
-![audit](https://raw.githubusercontent.com/privet56/LaraBun/master/lighthouse.audit.png)
+![audit](https://raw.githubusercontent.com/privet56/LaraBun/master/img/lighthouse.audit.png)
 
 ## Swagger UI:
 
-![swui](https://raw.githubusercontent.com/privet56/LaraBun/master/swagger_ui_for_buns.gif)
+![swui](https://raw.githubusercontent.com/privet56/LaraBun/master/img/swagger_ui_for_buns.gif)
