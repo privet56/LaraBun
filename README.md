@@ -1,14 +1,14 @@
 # LaraBun: PHP, Laravel App to inform about Bunnies' life and races!
 
+## Start App: Backend, Frontend & Browser:
+    php -S localhost:8000 -t public/            //in the LaraBun_Backend folder
+    ng serve                                    //in the LaraBun_Fronten folder
+    http://localhost:4200
+
 ## Visual Code Extensions
 - GitLens
 - PHP IntelliSense
 - SQLite
-
-## Start
-    php -S localhost:8000 -t public/            //in the LaraBun_Backend folder
-    ng serve                                    //in the LaraBun_Fronten folder
-    http://localhost:4200
 
 ## Frontend in front of the Code editor:
 
