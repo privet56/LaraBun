@@ -15,8 +15,7 @@
 ![fe](https://raw.githubusercontent.com/privet56/LaraBun/master/frontend.gif)
 
 ## TODO:
-	fill in real data
-	Swagger UI pic
+	fill in a lot of real data
 
 ## Editor with Backend and Frontend projects
 
@@ -64,8 +63,7 @@
     composer require "darkaonline/l5-swagger"
     php artisan vendor:publish --provider "L5Swagger\L5SwaggerServiceProvider"
     php artisan l5-swagger:generate								//generates swagger docu, if you have comments a'la @SWG\Swagger( ...
-    php -S localhost:8000 -t public/
-    php artisan serve
+    php artisan serve                                           //don't use 'php -S ...'
     http://localhost:8000/api/documentation
 
 ### SQLite
@@ -126,3 +124,7 @@
     SEO: OK
 
 ![audit](https://raw.githubusercontent.com/privet56/LaraBun/master/lighthouse.audit.png)
+
+## Swagger UI:
+
+![swui](https://raw.githubusercontent.com/privet56/LaraBun/master/swagger_ui_for_buns.gif)
