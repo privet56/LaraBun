@@ -181,11 +181,16 @@ class BunController extends Controller
     public function update(Request $request, Bun $bun)
     {
         $validator = Validator::make($request->all(), [
-            'name' => 'required',
+            'name' => 'required|max:255',
             'desc' => 'required',
             'picture'=> 'required',
         ]);
         if ($validator->fails()) {
+
+            //this is for backend-rendered html form:
+            //use value="{{ old('title') }}" in the form input elements...
+            //return redirect()->back()->withInput()->withErrors($validator);
+
             return response()->json($validator->errors(), 422);
         }
 

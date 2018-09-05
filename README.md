@@ -37,6 +37,7 @@
     php artisan make:migration create_buns_table
     php artisan make:seeder BunsTableSeeder
     php artisan make:resource BunsResource						//creates class to handle JSON Web API
+    php artisan make:test BunTest
     php artisan migrate
     php artisan db:seed
     php artisan migrate:refresh
